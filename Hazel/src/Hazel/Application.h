@@ -37,5 +37,6 @@ namespace Hazel {
 
 	// To be defined in CLIENT
 	Application* CreateApplication();
+
 }
 

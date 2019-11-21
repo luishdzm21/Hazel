@@ -8,6 +8,6 @@
 
 #include "Hazel/ImGui/ImGuiLayer.h"
 
-// --Entrypoint------------------------
+// ---Entry Point---------------------
 #include "Hazel/EntryPoint.h"
-// ------------------------------------
+// -----------------------------------
