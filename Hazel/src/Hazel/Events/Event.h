@@ -4,6 +4,7 @@
 #include "Hazel/Core.h"
 
 namespace Hazel {
+
 	// Events in Hazel are currently blocking, meaning when an event occurs it
 	// immediately gets dispatched and must be dealt with right then an there.
 	// For the future, a better strategy might be to buffer events in an event
@@ -78,4 +79,5 @@ namespace Hazel {
 	{
 		return os << e.ToString();
 	}
+
 }
