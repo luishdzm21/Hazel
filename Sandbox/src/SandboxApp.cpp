@@ -18,9 +18,9 @@ public:
 
 	virtual void OnImGuiRender() override
 	{
-		// ImGui::Begin("Test");		// Linking errors
-		// ImGui::Text("Hello World");  // Still not working
-		// ImGui::End();                //
+		ImGui::Begin("Test");
+		ImGui::Text("Hello World");
+		ImGui::End();
 	}
 
 	void OnEvent(Hazel::Event& event) override
