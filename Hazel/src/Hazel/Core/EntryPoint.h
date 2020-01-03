@@ -1,4 +1,5 @@
 #pragma once
+#include "Hazel/Core/Core.h"
 
 #ifdef HZ_PLATFORM_WINDOWS
 
@@ -16,4 +17,4 @@ int main(int argc, char** argv)
 	delete app;
 }
 
-#endif // HZ_PLATFORM_WINDOWS
+#endif
