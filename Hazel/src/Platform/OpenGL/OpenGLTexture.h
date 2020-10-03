@@ -1,11 +1,11 @@
 #pragma once
 
-#include  "Hazel/Renderer/Texture.h"
+#include "Hazel/Renderer/Texture.h"
 
 #include <glad/glad.h>
 
 namespace Hazel {
-	
+
 	class OpenGLTexture2D : public Texture2D
 	{
 	public:
@@ -15,6 +15,7 @@ namespace Hazel {
 
 		virtual uint32_t GetWidth() const override { return m_Width; }
 		virtual uint32_t GetHeight() const override { return m_Height; }
+		virtual uint32_t GetRendererID() const override { return m_RendererID; }
 
 		virtual void SetData(void* data, uint32_t size) override;
 

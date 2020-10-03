@@ -28,13 +28,15 @@ namespace Hazel {
 
 		Window& GetWindow() { return *m_Window; }
 
+		void Close();
+
 		static Application& Get() { return *s_Instance; }
 	private:
 		void Run();
 		bool OnWindowClose(WindowCloseEvent& e);
 		bool OnWindowResize(WindowResizeEvent& e);
 	private:
-		Scope<Window> m_Window;
+		std::unique_ptr<Window> m_Window;
 		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		bool m_Minimized = false;
