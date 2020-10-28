@@ -5,9 +5,8 @@
 	#include "Platform/Windows/WindowsWindow.h"
 #endif
 
-namespace Hazel 
+namespace Hazel
 {
-
 	Scope<Window> Window::Create(const WindowProps& props)
 	{
 	#ifdef HZ_PLATFORM_WINDOWS
